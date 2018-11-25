@@ -14,10 +14,12 @@ namespace bookSearch
             string path = Console.ReadLine();
             // Get full info about all files  in current dir and subdirs
             List<System.IO.FileInfo> files = getRecursiveFiles(path);
+            Console.WriteLine("Files : ");
             foreach(var file in files)
             {
                Console.WriteLine(file.FullName);
             }
+            Console.ReadKey();
 
         }
         // Get full info about all files  in current dir and subdirs
